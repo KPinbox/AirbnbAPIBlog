@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: AirBnB API Docs
+tagline: Unofficial pages documenting AirBnB's API
 ---
 {% include JB/setup %}
 

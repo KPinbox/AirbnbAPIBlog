@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tagline: "Supporting tagline"
+tagline: "Unofficial pages documenting AirBnB's API"
 tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
