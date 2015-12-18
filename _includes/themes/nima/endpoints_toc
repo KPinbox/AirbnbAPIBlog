@@ -1,0 +1,16 @@
+
+<div class="endpoints-toc col-xs-2 scrollspy">
+
+	<ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+
+		{% for endpoint in endpoints %}
+
+			<li>
+				<a href="#{{ endpoint.title | downcase | replace: ' ', '-' }}">{{ endpoint.title }}</a>
+			</li>
+
+		{% endfor %}
+
+	</ul>
+
+</div>

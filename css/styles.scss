@@ -1,0 +1,115 @@
+---
+---
+
+body {
+  position: relative;
+}
+
+.navbar-air {
+	margin-bottom: 0px;
+}
+
+.navbar-collapse {
+  background-color: #fd5c63;
+  border-color: #fd5c63;
+}
+
+.navbar-header {
+  background-color: #fd5c63;
+  border-color: #fd5c63;
+}
+
+.navbar-nav {
+	.active {
+		background-color: #CC5056 !important;
+	}
+	a:hover {
+		background-color: #AB4C50 !important;
+	}
+}
+
+#brand {
+  color: #FFFFFF;
+}
+
+#brand:hover {
+	background-color: #AB4C50 !important;
+}
+
+.params-table {
+	margin-bottom: 10px;
+	text-align: center;
+
+	th {
+		text-align: center;
+	}
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #FFFFFF;
+}
+
+.affix {
+  top: 20px;
+  width: 213px;
+}
+
+.endpoint-request-link {
+	word-wrap: break-word;
+}
+
+@media (min-width: 1200px) {
+	.affix {
+		width: 263px;
+	}
+	.affix-bottom {
+		width: 263px;
+	}
+     
+}
+
+.affix-bottom {
+	position: absolute;
+	width: 213px;
+}
+
+
+.endpoint {
+	border-left: 2px solid #CCCCCC;
+	border-bottom: 2px solid #CCCCCC;
+	padding-bottom: 20px;
+}
+
+.form-group {
+	margin: 0.5em 0em;
+}
+
+#contact-form {
+	margin-top: 2em;
+}
+
+#footer {
+	background-color: #fd5c63;
+}
+
+.copyright {
+	color: white;
+}
+
+#btn-air {
+	background-image: -webkit-linear-gradient(top,#d9534f 0,#d9534f 100%);
+    background-image: linear-gradient(to bottom,#d9534f 0,#d9534f 100%);
+    background-repeat: repeat-x;
+    border-color: #AD3F44;
+    color: #FFFFFF;
+}
+
+#btn-air:hover {
+	border-color: #d9534f !important;
+	color: #DDDDDD;
+	background-color: #AD4643;
+}

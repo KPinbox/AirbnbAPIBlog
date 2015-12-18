@@ -8,7 +8,7 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : AirBnB API Unofficial Documentation
+title : The Official Unofficial Airbnb API Docs
 tagline: Unofficial documentation on the AirBnB API along with a blog containing interesting projects that use the API.
 author :
   name : Nima Rahnemoon

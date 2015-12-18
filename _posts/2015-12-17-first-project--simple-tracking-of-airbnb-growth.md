@@ -2,7 +2,7 @@
 layout: post
 title: "First project!  Simple tracking of AirBnB growth."
 description: ""
-category: 
+category: "project"
 tags: []
 ---
 {% include JB/setup %}
