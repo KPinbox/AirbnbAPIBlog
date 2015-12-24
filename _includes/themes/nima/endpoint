@@ -5,12 +5,34 @@
 
 		<a name="{{ endpoint.title | downcase | replace: ' ', '-' }}"><h3>{{ endpoint.title }}</h3></a>
 
+		{% if endpoint.description != empty %}
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h5 class="text-success"><strong>{{endpoint.description}}</strong></h5>
+			</div>
+		</div>
+
+		{% endif %}
+
+		{% if endpoint.warning != empty %}
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h5 class="text-danger">{{endpoint.warning}}</h5>
+			</div>
+		</div>
+
+		{% endif %}
+
 		<div class="row">
 
 	   		<p class="col-xs-3">Method: HTTP {{endpoint.method}}</p>
 
 	   		<p  class="col-xs-6"> Endpoint URL: <a href="{{endpoint.endpoint_url}}">{{ endpoint.endpoint_url }}</a></p>
 	   	</div>
+
+	   	{% if endpoint.method == "GET" %}
 
 	   	<div class="row">
 	    	<p class="col-xs-12">Complete Sample Request:
@@ -24,89 +46,157 @@
 	   		</p>
 	   	</div>
 
+	   	{% else %}
+	   	<div class="row">
+	   		<span class="col-xs-12">Complete Curl Request (Press "send to curl" to send in-browser test request):</span>
+	   		<div class="col-xs-offset-1 col-xs-11">
+	   			<pre class="embedcurl">{{ endpoint.complete_curl_request }}</pre>
+	   		</div>
+	   	</div>
+	   	{% endif %}
+
+	   	{% if endpoint.default_required_url_parameters != empty %}
+
 	   	<div class="row">
 		   	<div class="col-xs-12">
-			    <p>Default Required Parameters:</p>
-			    
-			    {% if endpoint.default_required_parameters == empty %}
-			    	<p class="col-xs-offset-1">None</p>
-			    {% else %}
-				    <table class="params-table col-xs-offset-1 col-xs-11">
-				    	<tr>
-				    		<th>Key</th>
-				    		<th>Value</th>
-				    		<th>Description</th>
-				    	</tr>
+			    <p>Default Required URL Parameters:</p>
+		        <table class="params-table col-xs-offset-1 col-xs-11">
+			    	<tr>
+			    		<th>Key</th>
+			    		<th>Value</th>
+			    		<th>Description</th>
+			    	</tr>
 
-				    	{% for param in endpoint.default_required_parameters %}
+			    	{% for param in endpoint.default_required_url_parameters %}
 
-				    	<tr>
-				    		<td>{{param.key}}</td>
-				    		<td>{{param.value}}</td>
-				    		<td>{{param.description}}</td>
-				    	</tr>
-						    	
-				    	{% endfor %}
+			    	<tr>
+			    		<td>{{param.key}}</td>
+			    		<td>{{param.value}}</td>
+			    		<td>{{param.description}}</td>
+			    	</tr>
+					    	
+			    	{% endfor %}
 
-				    </table>
-				{% endif %}
+			    </table>
 			</div>
 		</div>
+
+		{% endif %}
+
+
+		{% if endpoint.required_url_parameters != empty %}
 
 		<div class="row">
 			<div class="col-xs-12">
-				<p>Required Parameters:</p>
-			    {% if endpoint.required_parameters == empty %}
-			    	<p class="col-xs-offset-1">None</p>
-			    {% else %}
-				    <table class="params-table col-xs-offset-1 col-xs-11">
-				    	<tr>
-				    		<th>Key</th>
-				    		<th>Sample Value</th>
-				    		<th>Description</th>
-				    	</tr>
+				<p>Required URL Parameters:</p>
+			    <table class="params-table col-xs-offset-1 col-xs-11">
+			    	<tr>
+			    		<th>Key</th>
+			    		<th>Sample Value</th>
+			    		<th>Description</th>
+			    	</tr>
 
-				    	{% for param in endpoint.required_parameters %}
+			    	{% for param in endpoint.required_url_parameters %}
 
-				    	<tr>
-				    		<td>{{param.key}}</td>
-				    		<td>{{param.value}}</td>
-				    		<td>{{param.description}}</td>
-				    	</tr>
-						    	
-				    	{% endfor %}
+			    	<tr>
+			    		<td>{{param.key}}</td>
+			    		<td>{{param.value}}</td>
+			    		<td>{{param.description}}</td>
+			    	</tr>
+					    	
+			    	{% endfor %}
 
-				    </table>
-				{% endif %}
+			    </table>
 			</div>
 		</div>
+
+		{% endif %}
+
+
+		{% if endpoint.optional_url_parameters != empty %}
 
 	   	<div class="row">
 		   	<div class="col-xs-12">
-				<p>Optional Parameters:</p>
-			    {% if endpoint.optional_parameters == empty %}
-			    	<p class="col-xs-offset-1">None</p>
-			    {% else %}
-				    <table class="params-table col-xs-offset-1 col-xs-11">
-				    	<tr>
-				    		<th>Key</th>
-				    		<th>Sample Value</th>
-				    		<th>Description</th>
-				    	</tr>
+				<p>Optional URL Parameters:</p>
+			    <table class="params-table col-xs-offset-1 col-xs-11">
+			    	<tr>
+			    		<th>Key</th>
+			    		<th>Sample Value</th>
+			    		<th>Description</th>
+			    	</tr>
 
-				    	{% for param in endpoint.optional_parameters %}
+			    	{% for param in endpoint.optional_url_parameters %}
 
-				    	<tr>
-				    		<td>{{param.key}}</td>
-				    		<td>{{param.value}}</td>
-				    		<td>{{param.description}}</td>
-				    	</tr>
-						    	
-				    	{% endfor %}
+			    	<tr>
+			    		<td>{{param.key}}</td>
+			    		<td>{{param.value}}</td>
+			    		<td>{{param.description}}</td>
+			    	</tr>
+					    	
+			    	{% endfor %}
 
-				    </table>
-				{% endif %}
+			    </table>
 			</div>
 		</div>
+
+		{% endif %}
+
+
+		{% if endpoint.default_required_form_parameters != empty %}
+
+	   	<div class="row">
+		   	<div class="col-xs-12">
+			    <p>Default Required Form Parameters:</p>
+		        <table class="params-table col-xs-offset-1 col-xs-11">
+			    	<tr>
+			    		<th>Key</th>
+			    		<th>Value</th>
+			    		<th>Description</th>
+			    	</tr>
+
+			    	{% for param in endpoint.default_required_form_parameters %}
+
+			    	<tr>
+			    		<td>{{param.key}}</td>
+			    		<td>{{param.value}}</td>
+			    		<td>{{param.description}}</td>
+			    	</tr>
+					    	
+			    	{% endfor %}
+
+			    </table>
+			</div>
+		</div>
+
+		{% endif %}
+
+		{% if endpoint.required_form_parameters != empty %}
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Required Form Parameters:</p>
+			    <table class="params-table col-xs-offset-1 col-xs-11">
+			    	<tr>
+			    		<th>Key</th>
+			    		<th>Sample Value</th>
+			    		<th>Description</th>
+			    	</tr>
+
+			    	{% for param in endpoint.required_form_parameters %}
+
+			    	<tr>
+			    		<td>{{param.key}}</td>
+			    		<td>{{param.value}}</td>
+			    		<td>{{param.description}}</td>
+			    	</tr>
+					    	
+			    	{% endfor %}
+
+			    </table>
+			</div>
+		</div>
+
+		{% endif %}
+
 	</div>
 </div>

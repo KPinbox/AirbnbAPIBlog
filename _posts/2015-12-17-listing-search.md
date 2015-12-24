@@ -2,7 +2,7 @@
 layout: post
 order: "0"
 title: "Listing Search"
-description: ""
+description: "Returns listings that fit the given search parameters."
 method: "GET"
 endpoint_url: "https://api.airbnb.com/v2/search_results"
 
@@ -13,13 +13,13 @@ basic_sample_request_url: "https://api.airbnb.com/v2/search_results?client_id=30
 category: "endpoint"
 tags: []
 
-default_required_parameters: [
+default_required_url_parameters: [
 	{ key: "client_id", value: "3092nxybyb0otqw18e8nh5nty", description: "API Key" }
 ]
 
-required_parameters: []
+required_url_parameters: []
 
-optional_parameters: [
+optional_url_parameters: [
 	{ key: "locale", value: "en-US", description: "Desired lagnuage" },
 	{ key: "currency", value: "USD", description: "Desired currency" },
 	{ key: "_format", value: "for_search_results", description: "Not sure what this is for." },
