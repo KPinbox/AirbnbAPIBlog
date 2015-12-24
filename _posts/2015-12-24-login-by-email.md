@@ -9,8 +9,6 @@ endpoint_url: "https://api.airbnb.com/v1/authorize"
 
 complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -F grant_type=password -F password=asdf1234 -F username=airbnbdev@gmail.com https://api.airbnb.com/v1/authorize"
 
-basic_sample_request_url: "https://api.airbnb.com/v2/users/2917444?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD&_format=v1_legacy_show"
-
 category: "endpoint"
 tags: []
 
@@ -31,7 +29,7 @@ default_required_form_parameters: [
 
 required_form_parameters: [
 	{ key: "username", value: "airbnbdev@gmail.com", description: "Account's email address" },
-	{ key: "password", value: "asdf1234", description: "Account's clear-text password (note: https)" }
+	{ key: "password", value: "asdf1234", description: "Account's clear-text password (note: endpoint uses HTTPS)" }
 ]
 ---
 {% include JB/setup %}
