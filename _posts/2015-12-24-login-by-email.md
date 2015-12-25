@@ -3,9 +3,9 @@ layout: post
 order: "3"
 title: "Login By Email"
 description: "Returns an access_token, given a valid user account email and password."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> <strong>access_token</strong> is required to hit this endpoint."
 method: "POST"
-endpoint_url: "https://api.airbnb.com/v1/authorize"
+endpoint_url: "https://api.airbnb.com/v1/threads/create"
 
 complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -F grant_type=password -F password=asdf1234 -F username=airbnbdev@gmail.com https://api.airbnb.com/v1/authorize"
 
