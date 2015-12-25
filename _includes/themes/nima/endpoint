@@ -32,7 +32,7 @@
 	   		<p  class="col-xs-6"> Endpoint URL: <a href="{{endpoint.endpoint_url}}">{{ endpoint.endpoint_url }}</a></p>
 	   	</div>
 
-	   	{% if endpoint.method == "GET" %}
+	   	{% if endpoint.complete_sample_request_url != nil %}
 
 	   	<div class="row">
 	    	<p class="col-xs-12">Complete Sample Request:
@@ -40,22 +40,30 @@
 	    	</p>	
 	   	</div>
 
+	   	{% endif %}
+
+	   	{% if endpoint.basic_sample_request_url != nil %}
+
 	   	<div class="row">
 	   		<p class="col-xs-12">Basic Sample Request:
 	   			<a class="endpoint-request-link" target="_blank" href="{{ endpoint.basic_sample_request_url }}">{{ endpoint.basic_sample_request_url }}</a>
 	   		</p>
 	   	</div>
 
-	   	{% else %}
+	   	{% endif %}
+
+	   	{% if endpoint.complete_curl_request != nil %}
+
 	   	<div class="row">
 	   		<span class="col-xs-12">Complete Curl Request (Press "Send to Hurl.it" to send in-browser test request):</span>
 	   		<div class="col-xs-offset-1 col-xs-11">
 	   			<pre class="embedcurl">{{ endpoint.complete_curl_request }}</pre>
 	   		</div>
 	   	</div>
+	   	
 	   	{% endif %}
 
-	   	{% if endpoint.default_required_url_parameters != empty %}
+	   	{% if endpoint.default_required_url_parameters != nil %}
 
 	   	<div class="row">
 		   	<div class="col-xs-12">
@@ -84,7 +92,7 @@
 		{% endif %}
 
 
-		{% if endpoint.required_url_parameters != empty %}
+		{% if endpoint.required_url_parameters != nil %}
 
 		<div class="row">
 			<div class="col-xs-12">
@@ -113,7 +121,7 @@
 		{% endif %}
 
 
-		{% if endpoint.optional_url_parameters != empty %}
+		{% if endpoint.optional_url_parameters != nil %}
 
 	   	<div class="row">
 		   	<div class="col-xs-12">
@@ -142,7 +150,7 @@
 		{% endif %}
 
 
-		{% if endpoint.default_required_form_parameters != empty %}
+		{% if endpoint.default_required_form_parameters != nil %}
 
 	   	<div class="row">
 		   	<div class="col-xs-12">
@@ -170,7 +178,7 @@
 
 		{% endif %}
 
-		{% if endpoint.required_form_parameters != empty %}
+		{% if endpoint.required_form_parameters != nil %}
 
 		<div class="row">
 			<div class="col-xs-12">
@@ -183,6 +191,34 @@
 			    	</tr>
 
 			    	{% for param in endpoint.required_form_parameters %}
+
+			    	<tr>
+			    		<td>{{param.key}}</td>
+			    		<td>{{param.value}}</td>
+			    		<td>{{param.description}}</td>
+			    	</tr>
+					    	
+			    	{% endfor %}
+
+			    </table>
+			</div>
+		</div>
+
+		{% endif %}
+
+		{% if endpoint.required_header_parameters != nil %}
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Required Header Parameters:</p>
+			    <table class="params-table col-xs-offset-1 col-xs-11">
+			    	<tr>
+			    		<th>Key</th>
+			    		<th>Sample Value</th>
+			    		<th>Description</th>
+			    	</tr>
+
+			    	{% for param in endpoint.required_header_parameters %}
 
 			    	<tr>
 			    		<td>{{param.key}}</td>

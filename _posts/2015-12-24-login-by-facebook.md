@@ -3,7 +3,7 @@ layout: post
 order: "4"
 title: "Login By Facebook"
 description: "Returns an access_token, given a valid Facebook user OAuth access token. See <a href=\"https://developers.facebook.com/docs/facebook-login/access-tokens\" target=\"_blank\">the Facebook docs</a> to learn how to generate an FB access token."
-warning: "<strong>NOTE:</strong> The <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v1/authorize"
 
@@ -15,8 +15,6 @@ tags: []
 default_required_url_parameters: [
 	{ key: "client_id", value: "3092nxybyb0otqw18e8nh5nty", description: "API Key" }
 ]
-
-required_url_parameters: []
 
 optional_url_parameters: [
 	{ key: "locale", value: "en-US", description: "Desired lagnuage" },

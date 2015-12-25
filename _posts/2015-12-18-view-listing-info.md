@@ -18,8 +18,6 @@ default_required_url_parameters: [
 	{ key: "_format", value: "v1_legacy_for_p3", description: "API result format (just put this -- it won't work without it)" }
 ]
 
-required_url_parameters: []
-
 optional_url_parameters: [
 	{ key: "locale", value: "en-US", description: "Desired lagnuage" },
 	{ key: "_source", value: "mobile_p3", description: "Not sure. I'm guessing this means the request is coming from an Android mobile phone." },

@@ -17,8 +17,6 @@ default_required_url_parameters: [
 	{ key: "client_id", value: "3092nxybyb0otqw18e8nh5nty", description: "API Key" }
 ]
 
-required_url_parameters: []
-
 optional_url_parameters: [
 	{ key: "locale", value: "en-US", description: "Desired lagnuage" },
 	{ key: "currency", value: "USD", description: "Desired currency" },

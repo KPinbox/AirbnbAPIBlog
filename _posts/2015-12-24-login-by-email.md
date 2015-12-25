@@ -3,7 +3,7 @@ layout: post
 order: "3"
 title: "Login By Email"
 description: "Returns an access_token, given a valid user account email and password."
-warning: "<strong>NOTE:</strong> The <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v1/authorize"
 
@@ -15,8 +15,6 @@ tags: []
 default_required_url_parameters: [
 	{ key: "client_id", value: "3092nxybyb0otqw18e8nh5nty", description: "API Key" }
 ]
-
-required_url_parameters: []
 
 optional_url_parameters: [
 	{ key: "locale", value: "en-US", description: "Desired lagnuage" },

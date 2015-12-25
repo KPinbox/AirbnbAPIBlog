@@ -18,8 +18,6 @@ default_required_url_parameters: [
 	{ key: "_format", value: "v1_legacy_show", description: "API result format (just put this -- it'll work without it, but it won't have as much data)" }
 ]
 
-required_url_parameters: []
-
 optional_url_parameters: [
 	{ key: "locale", value: "en-US", description: "Desired lagnuage" },
 	{ key: "currency", value: "USD", description: "Currency for listings." }
