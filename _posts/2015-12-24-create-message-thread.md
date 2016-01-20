@@ -1,6 +1,6 @@
 ---
 layout: post
-order: "7"
+order: "8"
 title: "Create Message Thread"
 description: "Creates a message thread and a stay request, given a valid  access token and a listing ID."
 warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."

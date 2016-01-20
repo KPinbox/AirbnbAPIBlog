@@ -1,6 +1,6 @@
 ---
 layout: post
-order: "3"
+order: "5"
 title: "Login By Email"
 description: "Returns an access_token, given a valid user account email and password."
 warning: "<strong>NOTE:</strong> <strong>access_token</strong> is required to hit this endpoint."
