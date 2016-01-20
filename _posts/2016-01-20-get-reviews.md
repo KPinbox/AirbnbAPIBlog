@@ -18,7 +18,7 @@ default_required_url_parameters: [
 	{ key: "role", value: "all", description: "Not sure, but it's required." }
 ]
 
-required_form_parameters: [
+required_url_parameters: [
 	{ key: "listing_id", value: "2056659", description: "ID of the listing you'd like to view reviews for." }
 ]
 
