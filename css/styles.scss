@@ -113,3 +113,17 @@ a:hover {
 	color: #DDDDDD;
 	background-color: #AD4643;
 }
+
+.formsubmit {
+	background-image: -webkit-linear-gradient(top,#d9534f 0,#d9534f 100%);
+    background-image: linear-gradient(to bottom,#d9534f 0,#d9534f 100%);
+    background-repeat: repeat-x;
+    border-color: #AD3F44;
+    color: #FFFFFF;
+}
+
+.formsubmit:hover {
+	border-color: #d9534f !important;
+	color: #DDDDDD;
+	background-color: #AD4643;
+}
