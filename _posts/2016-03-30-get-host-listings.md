@@ -1,6 +1,8 @@
 ---
 layout: post
 order: "9"
+group: "Public"
+subgroup: "Get Info"
 title: "Get Host Listings"
 description: "Returns information about all the listings a user hosts."
 method: "GET"

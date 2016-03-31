@@ -1,6 +1,8 @@
 ---
 layout: post
 order: "2"
+group: "Public"
+subgroup: "Get Info"
 title: "Get Reviews"
 description: "Returns reviews for a given listing."
 method: "GET"

@@ -1,12 +1,14 @@
 ---
 layout: post
 order: "12"
-title: "Get Host Reservation Requests"
+group: "Host"
+subgroup: "Messages"
+title: "Get Reservation Requests"
 description: "Returns information about all the listing reservation requests new, preapproved or declined."
 method: "GET"
 endpoint_url: "https://api.airbnb.com/v1/reservations/relationship"
 
-complete_curl_request: "curl -X GET -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" --compressed https://api.airbnb.com/v1/reservations/relationship"
+complete_curl_request: "curl -X GET -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" --compressed https://api.airbnb.com/v1/reservations/relationship?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD"
 
 category: "endpoint"
 tags: []

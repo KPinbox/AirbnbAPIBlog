@@ -1,6 +1,8 @@
 ---
 layout: post
 order: "0"
+group: "Public"
+subgroup: "Get Info"
 title: "Listing Search"
 description: "Returns listings that fit the given search parameters."
 method: "GET"

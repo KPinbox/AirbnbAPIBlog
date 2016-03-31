@@ -1,13 +1,15 @@
 ---
 layout: post
 order: "39"
-title: "Get calendar of a hosted listing"
+group: "Host"
+subgroup: "Listing"
+title: "Get Calendar Info"
 description: "Get the calendar info for a listing the user is hosting."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "GET"
 endpoint_url: "https://api.airbnb.com/v2/batch/"
 
-complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary \"{\"operations\":[{\"method\":\"GET\",\"path\":\"/calendar_days\",\"query\":{\"start_date\":\"2016-01-30\",\"listing_id\":\"12132179\",\"_format\":\"host_calendar\",\"end_date\":\"2017-03-30\"}},{\"method\":\"GET\",\"path\":\"/dynamic_pricing_controls/12132179\",\"query\":{}}],\"_transaction\":false}\" --compressed https://api.airbnb.com/v2/batch/"
+complete_curl_request: "curl -X POST -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary '{\"operations\":[{\"method\":\"GET\",\"path\":\"/calendar_days\",\"query\":{\"start_date\":\"2016-01-30\",\"listing_id\":\"12132179\",\"_format\":\"host_calendar\",\"end_date\":\"2017-03-30\"}},{\"method\":\"GET\",\"path\":\"/dynamic_pricing_controls/12132179\",\"query\":{}}],\"_transaction\":false}' --compressed https://api.airbnb.com/v2/batch/?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD"
 
 category: "endpoint"
 tags: []

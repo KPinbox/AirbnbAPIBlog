@@ -1,7 +1,9 @@
 ---
 layout: post
 order: "20"
-title: "Get Phone Number for Security Check"
+group: "Host"
+subgroup: "Verification"
+title: "Get Phone Number(s)"
 description: "Get phone numbers that airbnb has to display to user so he/she can choose one to complete the security check and verify his/her account."
 method: "GET"
 endpoint_url: "https://api.airbnb.com/v2/security_checks/{userID}"

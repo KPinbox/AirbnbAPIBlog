@@ -1,13 +1,15 @@
 ---
 layout: post
 order: "33"
-title: "Set The Room and Beds of a Listing"
+group: "Host"
+subgroup: "Listing"
+title: "Set \"The Room and Beds\""
 description: "This updates the \"Room and Beds\" of a listing."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v1/listings/12132179/update"
 
-complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary \"{\"listing\":{\"property_type_id\":\"35\",\"bathrooms\":\"2.0\",\"room_type_category\":\"entire_home\",\"person_capacity\":\"2\",\"bedrooms\":\"2\",\"beds\":\"2\"}}\" --compressed https://api.airbnb.com/v1/listings/12132179/update"
+complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary '{\"listing\":{\"property_type_id\":\"35\",\"bathrooms\":\"2.0\",\"room_type_category\":\"entire_home\",\"person_capacity\":\"2\",\"bedrooms\":\"2\",\"beds\":\"2\"}}' --compressed https://api.airbnb.com/v1/listings/12132179/update?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD"
 
 category: "endpoint"
 tags: []

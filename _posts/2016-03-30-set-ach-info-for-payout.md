@@ -1,13 +1,15 @@
 ---
 layout: post
 order: "42"
+group: "Host"
+subgroup: "User"
 title: "Set ACH Info for Payout"
 description: "Set the account's payout information so Airbnb can pay the user."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v1/payout_infos/create_ach"
 
-complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -d \"account_name=Bank+of+America\" -d \"account_number=000043901948\" -d \"account_type=Checking\" -d \"country=US\" -d \"payout_address1=1641+Lachine+Drive\" -d \"payout_address2=\" -d \"payout_city=Sunnyvale\" -d \"payout_country=US\" -d \"payout_state=CA\" -d \"payout_zip=94087\" -d \"routing_number=121000123\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" https://api.airbnb.com/v1/payout_infos/create_ach"
+complete_curl_request: "curl -X POST -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" https://api.airbnb.com/v1/payout_infos/create_ach?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD&account_name=Bank+of+America&account_number=000043901948&account_type=Checking&country=US&payout_address1=1641+Lachine+Drive&payout_address2=&payout_city=Sunnyvale&payout_country=US&payout_state=CA&payout_zip=94087&routing_number=121000123"
 
 category: "endpoint"
 tags: []

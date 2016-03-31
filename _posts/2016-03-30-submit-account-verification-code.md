@@ -1,13 +1,15 @@
 ---
 layout: post
 order: "23"
-title: "Submit security verification code"
+group: "Host"
+subgroup: "Verification"
+title: "Submit Verification Code"
 description: "Submit the security verification code to verify the account."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v2/security_checks/{userID}"
 
-complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary \"{\"data\":{\"phone_number_id\":27231699,\"code\":\"0545\"},\"strategy\":\"phone_verification\",\"activity_type\":\"mobile\"}\" --compressed https://api.airbnb.com/v2/security_checks/57297136"
+complete_curl_request: "curl -X POST -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary '{\"data\":{\"phone_number_id\":27231699,\"code\":\"0545\"},\"strategy\":\"phone_verification\",\"activity_type\":\"mobile\"}' --compressed https://api.airbnb.com/v2/security_checks/57297136?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD"
 
 category: "endpoint"
 tags: []

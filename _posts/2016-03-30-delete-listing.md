@@ -1,13 +1,15 @@
 ---
 layout: post
 order: "42"
+group: "Host"
+subgroup: "Listing"
 title: "Delete Listing"
 description: "Delete a listing on the user's host account."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v1/listings/{listingID}/delete"
 
-complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" https://api.airbnb.com/v1/listings/12132128/delete"
+complete_curl_request: "curl -X POST -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" https://api.airbnb.com/v1/listings/12132128/delete?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD"
 
 category: "endpoint"
 tags: []

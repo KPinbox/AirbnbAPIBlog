@@ -1,9 +1,11 @@
 ---
 layout: post
 order: "10"
+group: "Host"
+subgroup: "Messages"
 title: "Get Host Messages"
 description: "Returns host messages."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "GET"
 endpoint_url: "https://api.airbnb.com/v2/threads"
 

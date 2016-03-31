@@ -1,6 +1,8 @@
 ---
 layout: post
 order: "7"
+group: "User"
+subgroup: "Messages"
 title: "Get Messages"
 description: "Returns message threads, given an AirBnB access token (from authenticating with login endpoints)."
 warning: "<strong>NOTE:</strong> <strong>access_token</strong> is required to hit this endpoint."

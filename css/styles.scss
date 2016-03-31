@@ -77,14 +77,6 @@ a:hover {
 	width: 213px;
 }
 
-.endpoints-toc {
-	#nav {
-		overflow-y: auto;
-		height: 100%;
-		width: 100%;
-	}
-}
-
 .endpoint {
 	border-left: 2px solid #CCCCCC;
 	border-bottom: 2px solid #CCCCCC;
@@ -133,4 +125,50 @@ a:hover {
 	border-color: #d9534f !important;
 	color: #DDDDDD;
 	background-color: #AD4643;
+}
+
+
+#table-of-contents-title {
+	color: #FD5C63;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.group-list {
+	margin-top: 0.5em;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.subgroup-list {
+	margin-top: 0.5em;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.group-title {
+	margin-top: 0.5em;
+	color: #128CC5;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.subgroup-title {
+	margin-top: 0.5em;
+	color: #128CC5;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.toc-list-item {
+	margin-bottom: 0.1em;
+}
+
+.endpoints-toc {
+	#nav {
+		overflow-y: auto;
+		height: 100%;
+	}
 }

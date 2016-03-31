@@ -1,6 +1,8 @@
 ---
 layout: post
 order: "3"
+group: "Public"
+subgroup: "Get Info"
 title: "View User Info"
 description: "Returns detailed information about a user, given his/her/its ID (e.g., found in the view listing endpoint reponse)."
 method: "GET"

@@ -1,9 +1,11 @@
 ---
 layout: post
 order: "5"
+group: "Public"
+subgroup: "Login"
 title: "Login By Email"
 description: "Returns an access_token, given a valid user account email and password."
-warning: "<strong>NOTE:</strong> <strong>access_token</strong> is required to hit this endpoint."
+warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
 method: "POST"
 endpoint_url: "https://api.airbnb.com/v1/authorize"
 

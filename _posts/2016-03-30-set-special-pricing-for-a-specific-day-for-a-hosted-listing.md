@@ -1,13 +1,15 @@
 ---
 layout: post
 order: "41"
-title: "Set special pricing for a specific day for a hosted listing"
-description: "As the title says..."
-warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
+group: "Host"
+subgroup: "Listing"
+title: "Set Special Daily Pricing"
+description: "Set special pricing for a specific day."
+warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
 method: "PUT"
 endpoint_url: "https://api.airbnb.com/v2/calendars/12132179/2016-04-15/2016-04-15"
 
-complete_curl_request: "curl -X POST -d \"client_id=3092nxybyb0otqw18e8nh5nty\" -d \"locale=en-US\" -d \"currency=USD\" id \"_format=host_calendar\" -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary \"{\"daily_price\":60,\"demand_based_pricing_overridden\":true,\"availability\":\"available\"}\" --compressed https://api.airbnb.com/v2/batch/"
+complete_curl_request: "curl -X POST -H \"X-Airbnb-OAuth-Token: 9nwld6we4td9vkwj160teb49a\" -H \"Content-Type: application/json; charset=UTF-8\" --data-binary '{\"daily_price\":60,\"demand_based_pricing_overridden\":true,\"availability\":\"available\"}' --compressed https://api.airbnb.com/v2/batch/?client_id=3092nxybyb0otqw18e8nh5nty&locale=en-US&currency=USD&_format=host_calendar"
 
 category: "endpoint"
 tags: []

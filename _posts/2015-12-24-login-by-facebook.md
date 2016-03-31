@@ -1,6 +1,8 @@
 ---
 layout: post
 order: "4"
+group: "Public"
+subgroup: "Login"
 title: "Login By Facebook"
 description: "Returns an access_token, given a valid Facebook user OAuth access token. See <a href=\"https://developers.facebook.com/docs/facebook-login/access-tokens\" target=\"_blank\">the Facebook docs</a> to learn how to generate an FB access token."
 warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."

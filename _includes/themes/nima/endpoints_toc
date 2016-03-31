@@ -1,15 +1,58 @@
 
-<div class="endpoints-toc col-xs-3 scrollspy">
+<div class="endpoints-toc col-md-4 col-lg-3 scrollspy hidden-xs hidden-sm">
 
-	<ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+	<ul id="nav" class="nav" data-spy="affix">
+
+		<h1 id="table-of-contents-title">Table of Contents</h1>
+
+		{% assign endpoints = endpoints | sort: 'subgroup' | sort: 'group' %}
+		{% assign prev_group = "" %}
+		{% assign prev_subgroup = "" %}
 
 		{% for endpoint in endpoints %}
 
-			<li>
-				<a href="#{{ endpoint.title | downcase | replace: ' ', '-' }}">{{ endpoint.title }}</a>
+			{% if prev_subgroup != endpoint.subgroup %}
+				{% if prev_subgroup != "" %}
+					</ul>
+				{% endif %}
+			{% endif %}
+
+			{% if prev_group != endpoint.group %}
+				{% if prev_group != "" %}
+					</ul>
+				{% endif %}
+			{% endif %}
+
+			{% if prev_group != endpoint.group %}
+				{% assign group_id = (endpoint.group | downcase | replace: ' ', '-') %}
+				<li data-toggle="collapse" data-target="#{{group_id}}" class="group-title col-xs-offset-1">
+					{{endpoint.group}} Endpoints
+					<span class="caret"></span>
+				</li>
+				<ul id="{{ group_id }}" class="collapse group-list col-xs-offset-2">
+			{% endif %}
+
+			{% if prev_subgroup != endpoint.subgroup %}
+				{% capture subgroup_id %}{{ endpoint.group | downcase | replace: ' ', '-' }}-{{ endpoint.subgroup | downcase | replace: ' ', '-' }}{% endcapture %}
+				<li data-toggle="collapse" data-target="#{{subgroup_id}}" class="subgroup-title">
+					{{endpoint.subgroup}} Endpoints
+					<span class="caret"></span>
+				</li>
+				<ul id="{{ subgroup_id }}" class="collapse subgroup-list col-xs-offset-1">
+			{% endif %}
+
+			<li class="toc-list-item">
+				<a href="#{{ endpoint.title | downcase | replace: '"', '' | replace: ' ', '-' }}">
+					{{ endpoint.title }}
+				</a>
 			</li>
 
+			{% assign prev_group = endpoint.group %}
+			{% assign prev_subgroup = endpoint.subgroup %}
+
 		{% endfor %}
+		</ul>
+		</ul>
 
 	</ul>
 
