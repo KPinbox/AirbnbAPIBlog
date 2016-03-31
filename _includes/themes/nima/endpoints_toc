@@ -6,24 +6,24 @@
 		<h1 id="table-of-contents-title">Table of Contents</h1>
 
 		{% assign endpoints = endpoints | sort: 'subgroup_id' %}
-		{% assign prev_group = "" %}
-		{% assign prev_subgroup = "" %}
+		{% assign prev_group_id = "" %}
+		{% assign prev_subgroup_id = "" %}
 
 		{% for endpoint in endpoints %}
 
-			{% if prev_subgroup != endpoint.subgroup %}
-				{% if prev_subgroup != "" %}
+			{% if prev_subgroup_id != endpoint.subgroup_id %}
+				{% if prev_subgroup_id != "" %}
 					</ul>
 				{% endif %}
 			{% endif %}
 
-			{% if prev_group != endpoint.group %}
-				{% if prev_group != "" %}
+			{% if prev_group_id != endpoint.group_id %}
+				{% if prev_group_id != "" %}
 					</ul>
 				{% endif %}
 			{% endif %}
 
-			{% if prev_group != endpoint.group %}
+			{% if prev_group_id != endpoint.group_id %}
 				{% assign group_id = (endpoint.group | downcase | replace: ' ', '-') %}
 				<li data-toggle="collapse" data-target="#{{group_id}}" class="group-title col-xs-offset-1">
 					{{endpoint.group}} Endpoints
@@ -32,7 +32,7 @@
 				<ul id="{{ group_id }}" class="collapse group-list col-xs-offset-2">
 			{% endif %}
 
-			{% if prev_subgroup != endpoint.subgroup %}
+			{% if prev_subgroup_id != endpoint.subgroup_id %}
 				{% capture subgroup_id %}{{ endpoint.group | downcase | replace: ' ', '-' }}-{{ endpoint.subgroup | downcase | replace: ' ', '-' }}{% endcapture %}
 				<li data-toggle="collapse" data-target="#{{subgroup_id}}" class="subgroup-title">
 					{{endpoint.subgroup}} Endpoints
@@ -47,8 +47,8 @@
 				</a>
 			</li>
 
-			{% assign prev_group = endpoint.group %}
-			{% assign prev_subgroup = endpoint.subgroup %}
+			{% assign prev_group_id = endpoint.group_id %}
+			{% assign prev_subgroup_id = endpoint.subgroup_id %}
 
 		{% endfor %}
 		</ul>
