@@ -2,6 +2,7 @@
 layout: post
 order: "41"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Special Daily Pricing"
 description: "Set special pricing for a specific day."

@@ -2,6 +2,7 @@
 layout: post
 order: "24"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Long-Term Prices"
 description: "Set the weekly/monthly price of the listing."

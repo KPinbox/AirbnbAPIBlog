@@ -2,6 +2,7 @@
 layout: post
 order: "30"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set \"Other Things To Note\""
 description: "This updates the \"Other Things to Note\" field of the listing."

@@ -2,6 +2,7 @@
 layout: post
 order: "14"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Create Empty Listing"
 description: "Create empty listing to host -- you can update the listing with information in other requests."

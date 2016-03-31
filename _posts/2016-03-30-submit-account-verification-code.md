@@ -2,6 +2,7 @@
 layout: post
 order: "23"
 group: "Host"
+group_id: 2
 subgroup: "Verification"
 title: "Submit Verification Code"
 description: "Submit the security verification code to verify the account."

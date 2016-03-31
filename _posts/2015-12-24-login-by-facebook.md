@@ -2,6 +2,7 @@
 layout: post
 order: "4"
 group: "Public"
+group_id: 0
 subgroup: "Login"
 title: "Login By Facebook"
 description: "Returns an access_token, given a valid Facebook user OAuth access token. See <a href=\"https://developers.facebook.com/docs/facebook-login/access-tokens\" target=\"_blank\">the Facebook docs</a> to learn how to generate an FB access token."

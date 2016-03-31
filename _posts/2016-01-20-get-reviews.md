@@ -2,6 +2,7 @@
 layout: post
 order: "2"
 group: "Public"
+group_id: 0
 subgroup: "Get Info"
 title: "Get Reviews"
 description: "Returns reviews for a given listing."

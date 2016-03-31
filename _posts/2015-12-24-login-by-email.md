@@ -2,6 +2,7 @@
 layout: post
 order: "5"
 group: "Public"
+group_id: 0
 subgroup: "Login"
 title: "Login By Email"
 description: "Returns an access_token, given a valid user account email and password."

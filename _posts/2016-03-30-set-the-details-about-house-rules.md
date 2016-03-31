@@ -2,6 +2,7 @@
 layout: post
 order: "31"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set \"House Rules\""
 description: "This updates the \"House Rules\" field of the listing."

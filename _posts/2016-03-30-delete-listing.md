@@ -2,6 +2,7 @@
 layout: post
 order: "42"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Delete Listing"
 description: "Delete a listing on the user's host account."

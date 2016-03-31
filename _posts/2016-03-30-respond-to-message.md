@@ -2,6 +2,7 @@
 layout: post
 order: "11"
 group: "Host"
+group_id: 2
 subgroup: "Messages"
 title: "Respond To Message"
 description: "Respond to a message in a message thread (whether as a host or guest)."

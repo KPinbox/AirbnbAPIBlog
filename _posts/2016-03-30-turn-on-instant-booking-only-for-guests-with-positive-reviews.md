@@ -2,6 +2,7 @@
 layout: post
 order: "36"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Turn On Positive Review Instant Booking"
 description: "This would allow a guest to \"instant book\" the listing."

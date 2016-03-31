@@ -2,6 +2,7 @@
 layout: post
 order: "18"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Price"
 description: "Set the price of the listing."

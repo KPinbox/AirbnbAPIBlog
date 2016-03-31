@@ -2,6 +2,7 @@
 layout: post
 order: "21"
 group: "Host"
+group_id: 2
 subgroup: "Verification"
 title: "Request Verification Text"
 description: "Text security code to selected phone number for account verification."

@@ -2,6 +2,7 @@
 layout: post
 order: "12"
 group: "Host"
+group_id: 2
 subgroup: "Messages"
 title: "Get Reservation Requests"
 description: "Returns information about all the listing reservation requests new, preapproved or declined."

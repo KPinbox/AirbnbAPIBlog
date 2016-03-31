@@ -2,6 +2,7 @@
 layout: post
 order: "39"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Get Calendar Info"
 description: "Get the calendar info for a listing the user is hosting."

@@ -2,6 +2,7 @@
 layout: post
 order: "10"
 group: "Host"
+group_id: 2
 subgroup: "Messages"
 title: "Get Host Messages"
 description: "Returns host messages."

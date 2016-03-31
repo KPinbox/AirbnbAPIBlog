@@ -2,6 +2,7 @@
 layout: post
 order: "38"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Instant Booking Automated Message"
 description: "Sets an automated message that will be sent when a user instant books the listing."

@@ -2,6 +2,7 @@
 layout: post
 order: "6"
 group: "Public"
+group_id: 0
 subgroup: "Login"
 title: "Login By Google"
 description: "Returns an access_token, given a valid Google user OAuth access token. See <a href=\"https://developers.google.com/identity/protocols/OAuth2\" target=\"_blank\">the Google docs</a> to learn how to generate a Google access token."

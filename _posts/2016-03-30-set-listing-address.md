@@ -2,6 +2,7 @@
 layout: post
 order: "17"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Address"
 description: "Respond to a message in a message thread (whether as a host or guest)."

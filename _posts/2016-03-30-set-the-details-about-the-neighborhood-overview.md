@@ -2,6 +2,7 @@
 layout: post
 order: "28"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set \"Neighborhood Overview\""
 description: "This updates the \"Neighborhood Overview\" field of the listing."

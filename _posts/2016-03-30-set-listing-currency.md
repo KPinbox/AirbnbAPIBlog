@@ -2,6 +2,7 @@
 layout: post
 order: "25"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Currency"
 description: "Se the currency of the listing."

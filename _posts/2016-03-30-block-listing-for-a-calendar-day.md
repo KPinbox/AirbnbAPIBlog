@@ -2,6 +2,7 @@
 layout: post
 order: "40"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Block Calendar Day"
 description: "Make a user's hosted listing unbookable for a given calendar day"

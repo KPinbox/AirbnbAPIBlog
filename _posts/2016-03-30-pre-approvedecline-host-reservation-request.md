@@ -2,6 +2,7 @@
 layout: post
 order: "13"
 group: "Host"
+group_id: 2
 subgroup: "Messages"
 title: "Pre-approve/Decline Reservation Request"
 description: "Pre-approve or decline a request for reserving your listing."

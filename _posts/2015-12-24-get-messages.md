@@ -2,6 +2,7 @@
 layout: post
 order: "7"
 group: "User"
+group_id: 1
 subgroup: "Messages"
 title: "Get Messages"
 description: "Returns message threads, given an AirBnB access token (from authenticating with login endpoints)."

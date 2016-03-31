@@ -2,6 +2,7 @@
 layout: post
 order: "19"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Activate/Deactive Listing"
 description: "Make the user's listing active or deactivate the listing."

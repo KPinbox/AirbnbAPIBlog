@@ -2,6 +2,7 @@
 layout: post
 order: "14"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Add Photo"
 description: "Add a photo to the listing."

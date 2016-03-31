@@ -2,6 +2,7 @@
 layout: post
 order: "16"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Summary"
 description: "Set the summary of the listing."

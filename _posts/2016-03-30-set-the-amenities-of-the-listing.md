@@ -2,6 +2,7 @@
 layout: post
 order: "32"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Amenities"
 description: "This updates the \"Amenities\" of a listing."

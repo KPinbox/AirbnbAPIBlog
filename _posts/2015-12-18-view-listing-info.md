@@ -2,6 +2,7 @@
 layout: post
 order: "1"
 group: "Public"
+group_id: 0
 subgroup: "Get Info"
 title: "View Listing Info"
 description: "Returns detailed information about a listing, given its ID (e.g., found in the search endpoint reponse)."

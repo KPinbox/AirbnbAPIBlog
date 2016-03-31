@@ -2,6 +2,7 @@
 layout: post
 order: "37"
 group: "Host"
+group_id: 2
 subgroup: "Listing"
 title: "Set Instant Booking Advance Notice Field"
 description: "Sets the number of hours a user is allowed to instant book a listing."
