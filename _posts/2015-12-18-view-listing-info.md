@@ -4,6 +4,7 @@ order: "1"
 group: "Public"
 group_id: 0
 subgroup: "Get Info"
+subgroup_id: 1
 title: "View Listing Info"
 description: "Returns detailed information about a listing, given its ID (e.g., found in the search endpoint reponse)."
 method: "GET"

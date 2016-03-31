@@ -4,6 +4,7 @@ order: "0"
 group: "Public"
 group_id: 0
 subgroup: "Get Info"
+subgroup_id: 1
 title: "Listing Search"
 description: "Returns listings that fit the given search parameters."
 method: "GET"

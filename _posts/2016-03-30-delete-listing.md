@@ -4,6 +4,7 @@ order: "42"
 group: "Host"
 group_id: 2
 subgroup: "Listing"
+subgroup_id: 21
 title: "Delete Listing"
 description: "Delete a listing on the user's host account."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

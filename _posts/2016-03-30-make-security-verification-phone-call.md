@@ -4,6 +4,7 @@ order: "22"
 group: "Host"
 group_id: 2
 subgroup: "Verification"
+subgroup_id: 22
 title: "Request Verification Call"
 description: "Call the selected phone number to give the user the verification code for account verification."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

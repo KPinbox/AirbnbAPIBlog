@@ -4,6 +4,7 @@ order: "24"
 group: "Host"
 group_id: 2
 subgroup: "Listing"
+subgroup_id: 21
 title: "Set Long-Term Prices"
 description: "Set the weekly/monthly price of the listing."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

@@ -4,6 +4,7 @@ order: "2"
 group: "Public"
 group_id: 0
 subgroup: "Get Info"
+subgroup_id: 1
 title: "Get Reviews"
 description: "Returns reviews for a given listing."
 method: "GET"

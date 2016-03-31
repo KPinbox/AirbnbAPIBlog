@@ -4,6 +4,7 @@ order: "23"
 group: "Host"
 group_id: 2
 subgroup: "Verification"
+subgroup_id: 22
 title: "Submit Verification Code"
 description: "Submit the security verification code to verify the account."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

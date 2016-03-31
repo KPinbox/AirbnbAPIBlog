@@ -4,6 +4,7 @@ order: "33"
 group: "Host"
 group_id: 2
 subgroup: "Listing"
+subgroup_id: 21
 title: "Set \"The Room and Beds\""
 description: "This updates the \"Room and Beds\" of a listing."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

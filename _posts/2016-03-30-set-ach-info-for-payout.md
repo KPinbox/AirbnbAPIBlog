@@ -4,6 +4,7 @@ order: "42"
 group: "Host"
 group_id: 2
 subgroup: "Payment"
+subgroup_id: 23
 title: "Set ACH Info for Payout"
 description: "Set the account's payout information so Airbnb can pay the user."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

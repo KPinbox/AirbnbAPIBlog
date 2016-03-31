@@ -4,6 +4,7 @@ order: "41"
 group: "Host"
 group_id: 2
 subgroup: "Listing"
+subgroup_id: 21
 title: "Set Special Daily Pricing"
 description: "Set special pricing for a specific day."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
