@@ -5,7 +5,6 @@ group: "Host"
 group_id: 2
 subgroup: "Verification"
 subgroup_id: 22
-sort_order: 222
 title: "Request Verification Text"
 description: "Text security code to selected phone number for account verification."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

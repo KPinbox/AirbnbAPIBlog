@@ -5,7 +5,6 @@ group: "Host"
 group_id: 2
 subgroup: "Messages"
 subgroup_id: 20
-sort_order: 220
 title: "Get Host Messages"
 description: "Returns host messages."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

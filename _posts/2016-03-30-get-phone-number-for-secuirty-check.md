@@ -5,7 +5,6 @@ group: "Host"
 group_id: 2
 subgroup: "Verification"
 subgroup_id: 22
-sort_order: 222
 title: "Get Phone Number(s)"
 description: "Get phone numbers that airbnb has to display to user so he/she can choose one to complete the security check and verify his/her account."
 method: "GET"

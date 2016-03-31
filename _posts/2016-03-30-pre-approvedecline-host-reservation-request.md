@@ -5,7 +5,6 @@ group: "Host"
 group_id: 2
 subgroup: "Messages"
 subgroup_id: 20
-sort_order: 220
 title: "Pre-approve/Decline Reservation Request"
 description: "Pre-approve or decline a request for reserving your listing."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

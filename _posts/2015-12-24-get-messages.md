@@ -5,7 +5,6 @@ group: "User"
 group_id: 1
 subgroup: "Messages"
 subgroup_id: 10
-sort_order: 110
 title: "Get Messages"
 description: "Returns message threads, given an AirBnB access token (from authenticating with login endpoints)."
 warning: "<strong>NOTE:</strong> <strong>access_token</strong> is required to hit this endpoint."

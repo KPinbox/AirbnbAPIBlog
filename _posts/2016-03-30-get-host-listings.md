@@ -5,7 +5,6 @@ group: "Public"
 group_id: 0
 subgroup: "Get Info"
 subgroup_id: 1
-sort_order: 1
 title: "Get Host Listings"
 description: "Returns information about all the listings a user hosts."
 method: "GET"

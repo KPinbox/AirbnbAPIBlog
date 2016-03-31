@@ -5,7 +5,6 @@ group: "Host"
 group_id: 2
 subgroup: "Listing"
 subgroup_id: 21
-sort_order: 221
 title: "Set Instant Booking Advance Notice Field"
 description: "Sets the number of hours a user is allowed to instant book a listing."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"
