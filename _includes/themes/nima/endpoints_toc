@@ -5,7 +5,8 @@
 
 		<h1 id="table-of-contents-title">Table of Contents</h1>
 
-		{% assign endpoints = endpoints | sort: 'subgroup_id' | sort: 'group_id' %}
+		{% assign sort_order = ((group_id * 100) + subgroup_id) %}
+		{% assign endpoints = endpoints | sort: 'sort_order' %}
 		{% assign prev_group = "" %}
 		{% assign prev_subgroup = "" %}
 
