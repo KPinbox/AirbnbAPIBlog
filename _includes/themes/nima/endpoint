@@ -234,5 +234,16 @@
 
 		{% endif %}
 
+		{% if endpoint.body != nil %}
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Body:</p>
+			    <p class="col-xs-offset-1 col-xs-11">{{endpoint.body}}</p>
+			</div>
+		</div>
+
+		{% endif %}
+
 	</div>
 </div>

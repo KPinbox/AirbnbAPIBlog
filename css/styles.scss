@@ -77,6 +77,13 @@ a:hover {
 	width: 213px;
 }
 
+.endpoints-toc {
+	#nav {
+		overflow-y: auto;
+		height: 100%;
+		width: 100%;
+	}
+}
 
 .endpoint {
 	border-left: 2px solid #CCCCCC;
