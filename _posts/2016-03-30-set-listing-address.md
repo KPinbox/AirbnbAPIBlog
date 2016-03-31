@@ -5,6 +5,7 @@ group: "Host"
 group_id: 2
 subgroup: "Listing"
 subgroup_id: 21
+sort_order: 221
 title: "Set Address"
 description: "Respond to a message in a message thread (whether as a host or guest)."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

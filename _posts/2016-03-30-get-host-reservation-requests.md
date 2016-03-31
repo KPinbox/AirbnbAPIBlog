@@ -5,6 +5,7 @@ group: "Host"
 group_id: 2
 subgroup: "Messages"
 subgroup_id: 20
+sort_order: 220
 title: "Get Reservation Requests"
 description: "Returns information about all the listing reservation requests new, preapproved or declined."
 method: "GET"

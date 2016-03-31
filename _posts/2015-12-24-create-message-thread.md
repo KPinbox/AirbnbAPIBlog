@@ -5,6 +5,7 @@ group: "User"
 group_id: 1
 subgroup: "Messages"
 subgroup_id: 10
+sort_order: 110
 title: "Create Message Thread"
 description: "Creates a message thread and a stay request, given a valid  access token and a listing ID."
 warning: "<strong>NOTE:</strong> This is a logged-in endpoint and requires an <strong>access_token</strong>. See <a href=\"#login-by-email\">Login Endpoints.</a>"

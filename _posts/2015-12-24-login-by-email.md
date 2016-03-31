@@ -5,6 +5,7 @@ group: "Public"
 group_id: 0
 subgroup: "Login"
 subgroup_id: 0
+sort_order: 0
 title: "Login By Email"
 description: "Returns an access_token, given a valid user account email and password."
 warning: "<strong>NOTE:</strong> The returned <strong>access_token</strong> is required to hit logged-in endpoints."
