@@ -28,7 +28,7 @@ optional_url_parameters: [
 	{ key: "_limit", value: "10", description: "Number of listings to show at a time." },
 	{ key: "_offset", value: "0", description: "Number of listings to offset in search." },
 	{ key: "guests", value: "1", description: "Number of guests." },
-	{ key: "ib", value: "false", description: "Not sure." },
+	{ key: "ib", value: "false", description: "Setting to true will only show listings that are instant bookable." },
 	{ key: "ib_add_photo_flow", value: "true", description: "Not sure." },
 	{ key: "location", value: "Los%20Angeles%2C%20CA", description: "Search by location name -- if unsure of lat/lng, etc." },
 	{ key: "min_bathrooms", value: "0", description: "Minimum number of bathrooms." },
